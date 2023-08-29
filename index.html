@@ -4,33 +4,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recipe.com</title>
-    <link rel="stylesheet" href="css/materialize.css>">
+    <link rel="stylesheet" href="css/materialize.css">
+    <style>
+        h6{
+            line-height: 5vh;
+            text-align: justify;
+        }
+        p{
+            text-align: justify;
+        }
+    </style>
 </head>
 <body>
     <header>
         <!--Navbar-->
-        <nav>
-            <div class="navbar-fixed">
-                <div class=""
-
-            </div>
-        </nav>
+        <div class="navbar-fixed">
+            <nav class="white orange-text darken-4 z-depth-0">
+                <div class="nav-wrapper">
+                    <div class="container">
+                        <a href="" class="brand-logo">
+                            <img src="img/logo.png" alt="" width="13%" class="responsive-img"> 
+                        </a>
+                        <a href="#bar" class="sidenav-trigger right hide-on-med-and-up">
+                            <img src="img/menu.svg" alt="" class="orange darken-4">
+                        </a>
+                        <ul class="right hide-on-small-and-down">
+                            <li><a href="" class="red-text">Home</a></li>
+                            <li><a href="" class="red-text">About Us</a></li>
+                            <li><a href="" class="red-text">Services</a></li>
+                            <li><a href="" class="red-text">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <ul class="sidenav" id="bar" >
+                    <li><a href="" class="red-text">Home</a></li>
+                    <li><a href="" class="red-text">About Us</a></li>
+                    <li><a href="" class="red-text">Services</a></li>
+                    <li><a href="" class="red-text">Contact Us</a></li>
+            </nav>
+        </div>
+        
 
         <!--Slider-->
-        <section></section>
+        <section class="section">
+            <div class='slider'>
+                <ul class="slides">
+                    <li>
+                        <img src="img/cake_fruit.jpg">
+                    </li>
+                    <li>
+                        <img src="img/shrimp_soup.jpg">
+                    </li>
+                    <li>
+                        <img src="img/chicken_3.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="img/dessert_chocolate.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="img/ginger_cake.webp" alt="">
+                    </li>
+                </ul>
+            </div>
+        </section>
 
     </header>
 
     <main>
         <!-- welcome section -->
-        <section></section>
-
-        <!--customer comments-->
-        <section></section>
-
-        <!-- cakes section -->
-        <section></section>
-
+        <section>
+           
+        
+        
+            
         <!-- soups -->
         <section></section>
 
@@ -44,16 +90,19 @@
 
 
 
-
-
-
-
-
     <script src="js/jquery.js"></script>
     <script src="js/materialize.js"></script> 
     <script>
         $(document).ready(function(){
-            $()
+            $('.slider').slider({
+                duration:100,
+                transition:100,
+                indicators:true,
+                height:500
+            });
+            $('.sidenav').sidenav();
+            $('.collapsible').collapsible();
+            $('.parallax').parallax();
         });
     </script>
 </body>
